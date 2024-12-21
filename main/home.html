@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Explorer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <input type="text" id="usersearch" placeholder="Search for a company stock">
+        <button id="search-btn">Search</button>
+        <div class="profile">
+            <a href="/db/userprofile.html"><button><img src="profile-photo.jpeg" class="profile-picture"></button></a>
+        </div>
+
+        <br><br>
+        <div class="button-container">
+            <a href="home.html"><button class="btn">Home</button></a>
+            <a href="/learn/learn.html"><button class="btn">Learn</button></a>
+            <a href="/game/game.html"><button class="btn">Play Game</button></a>
+            <a href=""><button class="btn">Portfoilo</button></a>
+        </div>
+        <br><br>
+    </header>
+
+    <div id="stock-info">
+        <section id="company-details" style="display: none;">
+            <h2 id="company-name">Company Name</h2>
+            <p id="industry">Industry: </p>
+            <p id="description">Description: </p>
+
+            <div id="financial-metrics">
+                <h3>Key Financial Metrics</h3>
+                <ul type="none">
+                    <li>Market Cap: <span id="market-cap"></span></li>
+                    <li>P/E Ratio: <span id="pe-ratio"></span></li>
+                    <li>Dividend Yield: <span id="dividend-yield"></span></li>
+                </ul>
+            </div>
+
+            <canvas id="stock-chart" width="400" height="200"></canvas>
+            <br>
+            <div style="text-align: center;">
+                <button id="buy-btn" style="color: green;">Buy</button>
+                <button id="sell-btn" style="color: red;">Sell</button>
+            </div>
+
+            <br>
+            <a href="home.html"><button>Back</button></a>
+        </section>
+    </div>
+
+    <div id="container">
+        <h1>Learn Key Investment Concepts</h1>
+        <div class="concepts">
+            <button class="concept" onclick="showDetails('pe')">P/E Ratio</button>
+            <button class="concept" onclick="showDetails('dividend')">Dividend Yield</button>
+            <button class="concept" onclick="showDetails('equity')">Equity</button>
+            <button class="concept" onclick="showDetails('marketCap')">Market Cap</button>
+            <button class="concept" onclick="showDetails('risk')">Risk Tolerance</button>
+            <button class="concept" onclick="showDetails('compounding')">Compounding</button>
+            <button class="concept" onclick="showDetails('patience')">Patience</button>
+        </div>
+        <div id="details" class="details">
+            <h2>Click a concept to learn more!</h2>
+        </div>
+        
+    </div>
+
+    <script src="Stockinfo.js"></script>
+</body>
+
+</html>

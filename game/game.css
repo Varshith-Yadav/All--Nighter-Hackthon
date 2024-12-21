@@ -1,0 +1,38 @@
+#bingo-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    max-width: 400px;
+    
+}
+
+.bingo-cell {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    cursor: pointer;
+    
+}
+
+.bingo-cell.marked {
+    background: #a3e4d7;
+    color: white;
+    justify-content: center;
+}
+
+#bingo-game{
+    text-align: center;
+    width: 50%;
+    box-shadow: 0px 2px 5px ;
+    border-radius: 10px;
+    margin-left: 25%;
+    background-color: white;
+
+}
+
+
+body{
+    background-color: lightslategray;
+}

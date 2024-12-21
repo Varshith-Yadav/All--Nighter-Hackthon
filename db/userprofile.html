@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login and Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    
+    <div id="signup-section">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Username"><br><br>
+        <input type="email" id="signup-email" placeholder="Email"><br><br>
+        <input type="password" id="signup-password" placeholder="Password"><br><br>
+        <button id="signup-btn">Sign Up</button>
+    </div>
+
+    <div id="login-section" style="display: none;">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email"><br><br>
+        <input type="password" id="login-password" placeholder="Password"><br>
+        <button id="login-btn">Login</button>
+    </div>
+
+    <div id="dashboard-section" style="display: none;">
+        <h2>Dashboard</h2>
+        <p id="user-info"></p>
+        <Strong>Net Worth : 5000</Strong><br><br>
+        <button id="logout-btn">Logout</button><br><br>
+        <a href="/main/home.html"><button>homePage</button></a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
